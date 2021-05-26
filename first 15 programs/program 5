@@ -1,0 +1,21 @@
+import java.io.*;
+class Main{
+    public static void main(String args[])
+    {
+        int n;
+        try{
+            DataInputStream ds=new DataInputStream(System.in);
+            System.out.println("enter the number");
+            n=Integer.parseInt(ds.readLine());
+            if(n>0)
+            {
+                System.out.println("the number is positive");
+            }
+            else{
+                System.out.println("the number is negative");
+            }
+           
+        }catch(Exception e){}
+        
+    }
+}
