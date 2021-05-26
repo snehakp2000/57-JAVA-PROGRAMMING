@@ -1,0 +1,15 @@
+import java.io.DataInputStream;
+class Main{
+    public static void main(String args[]){
+        DataInputStream ds=new DataInputStream(System.in);
+        int m,n,sum;
+        try{
+        System.out.println("enter first number");
+        n=Integer.parseInt(ds.readLine());
+        System.out.println("enter second number");
+        m=Integer.parseInt(ds.readLine());
+        sum=n+m;
+        System.out.println("sum of entered numbers is"+sum);
+        }catch(Exception e){}
+    }
+}
