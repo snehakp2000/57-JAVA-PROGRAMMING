@@ -1,0 +1,29 @@
+import java.io.DataInputStream;
+class Main{
+    public static void main(String args[]){
+        DataInputStream ds=new DataInputStream(System.in);
+        int a,b,c,d,e,f,first,second,third,fourth;
+        try{
+           System.out.println("enter number");
+           a=Integer.parseInt(ds.readLine());
+           System.out.println("enter number");
+           b=Integer.parseInt(ds.readLine());
+           System.out.println("enter number");
+           c=Integer.parseInt(ds.readLine());
+           System.out.println("enter number");
+           d=Integer.parseInt(ds.readLine());
+           System.out.println("enter number");
+           e=Integer.parseInt(ds.readLine());
+           System.out.println("enter number");
+           f=Integer.parseInt(ds.readLine());
+           first=a+b*c;
+           second=(d+f)%a;
+           third=a+e*d/f;
+           fourth=a+b/c*d-e%f;
+           System.out.println(first);
+           System.out.println(second);
+           System.out.println(third);
+           System.out.println(fourth);
+        }catch (Exception r){}
+    }
+}
