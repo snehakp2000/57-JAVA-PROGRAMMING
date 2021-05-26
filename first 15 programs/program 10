@@ -1,0 +1,17 @@
+import java.io.*;
+class Main{
+    public static void main(String args[])
+    {
+        int i;
+        try{
+            DataInputStream ds=new DataInputStream(System.in);
+            System.out.println("printing natural number up to 10");
+            while(i<11)
+            {
+               System.out.println(i); 
+            }
+           
+        }catch(Exception e){}
+        
+    }
+}
