@@ -1,0 +1,23 @@
+import java.io.*;
+class Main{
+    public static void main(String args[])
+    {
+        int i,n;
+        try{
+            DataInputStream ds=new DataInputStream(System.in);
+            System.out.println("enter the limit of array");
+            n=Integer.parseInt(ds.readLine());
+            int a[]=new int[n];
+            System.out.println("read array elements");
+            for(i=0;i<n;i++)
+            {
+                a[i]=Integer.parseInt(ds.readLine());
+            }
+            System.out.println("enter position to access array elementl.the position should be less than"+n);
+            r=Integer.parseInt(ds.readLine());
+            System.out.println("array element at position"+r);
+            System.out.println(a[r-1]);
+        }catch(Exception e){}
+        
+    }
+}
