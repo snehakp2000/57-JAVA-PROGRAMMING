@@ -1,0 +1,18 @@
+import java.io.DataInputStream;
+class Main{
+    public static void main(String args[])
+    {
+       DataInputStream ds=new DataInputStream(System.in);
+       int a;
+       double area,perimeter;
+       try
+       {
+         System.out.println("enter tha radius");
+         a=Integer.parseInt(ds.readLine());
+         area=a*a*3.14;
+         perimeter=2*3.14*a;
+         System.out.println("area="+area);
+         System.out.println("perimeter="+perimeter);
+       }catch(Exception e){}
+    }
+}
