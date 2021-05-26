@@ -1,0 +1,24 @@
+import java.io.*;
+class Main{
+    public static void main(String args[])
+    {
+        int i,n;
+        try{
+            DataInputStream ds=new DataInputStream(System.in);
+            System.out.println("enter the limit of array");
+            n=Integer.parseInt(ds.readLine());
+            int a[]=new int[n];
+            System.out.println("read array elements");
+            for(i=0;i<n;i++)
+            {
+                a[i]=Integer.parseInt(ds.readLine());
+            }
+            System.out.println("printing array elements");
+            for(i=0;i<n;i++)
+            {
+                System.out.println(a[i]);
+            }
+        }catch(Exception e){}
+        
+    }
+}
