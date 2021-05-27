@@ -1,0 +1,24 @@
+import java.io.*;
+class Main{
+    public static void main(String args[])
+    {
+        int n;
+        try{
+        DataInputStream ds=new DataInputStream(System.in);
+        System.out.println("enter any number in 29,42,44,48");
+        n=Integer.parseInt(ds.readLine());
+        switch(n)
+        {
+            case 29:System.out.println("29-small");
+                    break;
+            case 42:System.out.println("42-Medium");
+                    break;
+            case 44:System.out.println("44-large");
+                    break;
+            case 48:System.out.println("48-extralarge");
+                    break;
+            default:System.out.println("unknown");
+        }
+        }catch(Exception e){}
+    }
+}
