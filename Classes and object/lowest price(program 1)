@@ -1,0 +1,37 @@
+class Product{
+int pcode;
+String pname;
+double price;
+void values(int c,String name,double p)
+{
+pcode=c;
+pname=name;
+price=p;
+}
+}
+class Main{
+public static void main(String args[])
+{
+Product p1=new Product();
+Product p2=new Product();
+Product p3=new Product();
+p1.values(123,"ring",20000);
+p2.values(345,"dress",5000);
+p3.values(567,"gold",29000);
+if(p1.price>p2.price)
+{
+if(p1.price>p3.price)
+{
+System.out.println("the product having lowest price is "+p3.pname);
+}
+else
+{
+System.out.println("the product having lowest price is  "+p2.pname);
+}
+}
+else
+{
+System.out.println("the product having lowest price is "+p1.pname);
+}
+}
+}
