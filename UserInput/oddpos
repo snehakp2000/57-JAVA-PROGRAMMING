@@ -1,0 +1,27 @@
+import java.io.*;
+class Odd
+{
+public static void main(String args[])
+{
+int n,i;
+BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+try{
+System.out.println("enter the limit of array");
+n=Integer.parseInt(reader.readLine());
+int[] arr=new int[10];
+System.out.println("enter the array elements");
+for(i=0;i<n;i++)
+{
+arr[i]=Integer.parseInt(reader.readLine());
+}
+System.out.println("array elements in odd position are.....");
+for(i=0;i<n;i++)
+{
+if(i%2!=0)
+{
+System.out.println(arr[i]);
+}
+}
+}catch(Exception e){}
+}
+}
