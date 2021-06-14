@@ -1,0 +1,24 @@
+import java.io.*;
+class Buffer
+{
+public static void main(String args[])
+{
+int n,i;
+BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+try{
+System.out.println("enter the limit of array");
+n=Integer.parseInt(reader.readLine());
+int[] arr=new int[10];
+System.out.println("enter the array elements");
+for(i=0;i<n;i++)
+{
+arr[i]=Integer.parseInt(reader.readLine());
+}
+System.out.println("array elements in reverse order are.....");
+for(i=0;i<n;i++)
+{
+System.out.println(arr[n-(i+1)]);
+}
+}catch(Exception e){}
+}
+}
