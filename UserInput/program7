@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Scanner;
+class Array
+{
+public static void main(String args[])
+{
+int n,i;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the limit of array");
+n=sc.nextInt();
+int[] arr=new int[20];
+System.out.println("enter the array elements");
+for(i=0;i<n;i++)
+{
+arr[i]=sc.nextInt();
+}
+System.out.println("the no of elements are "+n);
+}
+}
