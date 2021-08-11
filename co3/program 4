@@ -1,0 +1,61 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the details: ");
+            String bname=sc.next();
+            String publ=sc.next();
+            String lit=sc.next();
+            String fic=sc.next();
+            
+            fiction obj=new fiction(bname,publ,lit,fic);
+            obj.display();
+                
+	}
+}
+
+class Publisher{
+   String BookName,PublisherName,literatureName,FictionName;
+   Publisher(String BookName,String PublisherName,String literatureName,String FictionName){
+       this.BookName=BookName;
+       this.PublisherName=PublisherName;
+       this.literatureName=literatureName;
+       this.FictionName=FictionName;
+       
+   }
+   
+    
+}
+class Book extends Publisher{
+
+    public Book(String BookName, String PublisherName, String literatureName, String FictionName) {
+        super(BookName, PublisherName, literatureName, FictionName);
+    }
+      
+}
+class literature extends Book{
+    
+    public literature(String BookName, String PublisherName, String literatureName, String FictionName) {
+        super(BookName, PublisherName, literatureName, FictionName);
+    }
+    void display(){
+        System.out.println(BookName+" "+PublisherName+" "+literatureName+" "+FictionName);
+    }
+    
+}
+class fiction extends literature{
+    
+    public fiction(String BookName, String PublisherName, String literatureName, String FictionName) {
+        super(BookName, PublisherName, literatureName, FictionName);
+    }
+    
+}
