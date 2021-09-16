@@ -14,8 +14,8 @@ class pwdexp extends Exception{
 class Authentication{
        public static void main(String args[]){
            String uname,pwd;
-           String cuname="vipin";
-           String cpwd="vipin123";
+           String cuname="sneha";
+           String cpwd="sneha123";
            
            try{
                 Scanner s=new Scanner(System.in);
